@@ -2,11 +2,11 @@ package leetcode;
 
 public class MoveZeros {
 	public void moveZeroes(int[] nums) {
-        int j = 0;
+		int j = 0;
 		for ( int i=0;i<nums.length;i++){
 			if (nums[i]!=0){
 				nums[j] = nums[i];
-                //Ïàµ±ÓÚ½»»»ÔªËØ0¼°·ÇÁãÔªËØµÄÎ»ÖÃ
+		//ç›¸å½“äºŽäº¤æ¢å…ƒç´ 0åŠéžé›¶å…ƒç´ çš„ä½ç½®
 				if (i!=j){
 					nums[i] = 0;
 				}				
